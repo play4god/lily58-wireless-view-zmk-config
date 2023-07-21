@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+LASTVER=$(git ls-remote --tags 2>&1 | tail -1 | awk '{ print $2 }'  | cut -f3 -d'/') 
+MAJ=$(echo $LASTVER | cut -f1 -d'.' | cut -f2 -d'v');
+MIN=$(echo $LASTVER | cut -f2 -d'.'); 
+
+NEWMAJ=$MAJ; 
+NEWMIN=$(($MIN+1)); 
+
+THISVER=v$NEWMAJ.$NEWMIN
+
+echo Last tag $LASTVER
+
+echo Tagging and pushing $THISVER
+git tag $THISVER
+git push --tags
+
+echo
+echo "View build here:"
+echo "https://github.com/play4god/lily58-wireless-view-zmk-config/actions"
+open https://github.com/play4god/lily58-wireless-view-zmk-config/actions"
