@@ -19,4 +19,4 @@ git push --tags
 echo
 echo "View build here:"
 echo "https://github.com/play4god/lily58-wireless-view-zmk-config/actions"
-open https://github.com/play4god/lily58-wireless-view-zmk-config/actions"
+open https://github.com/play4god/lily58-wireless-view-zmk-config/actions
