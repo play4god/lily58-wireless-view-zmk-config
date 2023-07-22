@@ -14,7 +14,7 @@ echo Last tag $LASTVER
 
 echo Tagging and pushing $THISVER
 git tag $THISVER
-git push --tags
+git push origin main --tags
 
 echo
 echo "View build here:"
