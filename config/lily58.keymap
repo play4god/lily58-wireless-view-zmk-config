@@ -119,7 +119,7 @@
  &kp GRAVE            &kp N1             &kp N2             &kp N3        &kp N4        &kp N5                               &kp N6  &kp N7  &kp N8  &kp N9    &kp N0   &kp BSLH
     &trans          &kp LBKT           &kp RBKT       &kp LS(LBKT)  &kp LS(RBKT)     &kp EQUAL                            &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS  &kp EQUAL
     &trans  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG        &trans    &kp DELETE  &bt BT_CLR    &bt BT_NXT  &kp SLASH  &kp N1  &kp N2  &kp N3   &kp DOT  &kp MINUS
-                                                            &trans        &trans        &trans      &trans        &kp N0     &trans
+                                                            &trans        &trans        &trans  &trans        &trans         &trans  &kp N0  &trans
             >;
         };
 
