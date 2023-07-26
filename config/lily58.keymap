@@ -10,24 +10,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        BRACKETS {
-            bindings = <&mt RIGHT_BRACKET LBKT>;
-            key-positions = <9 10>;
-            layers = <0>;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+//    combos {
+//        compatible = "zmk,combos";
+//
+//        BRACKETS {
+//            bindings = <&mt RIGHT_BRACKET LBKT>;
+//            key-positions = <9 10>;
+//            layers = <0>;
+//        };
+//    };
+//
+//    conditional_layers {
+//        compatible = "zmk,conditional-layers";
+//
+//        tri_layer {
+//            if-layers = <1 2>;
+//            then-layer = <3>;
+//        };
+//    };
 
     macros {
         M_VSPREV: M_VSPREV {
@@ -110,6 +110,8 @@
 &mt LSHIFT ESC   &kp Z   &kp X      &kp C     &kp V   &kp B  &kp LBKT     &kp RBKT    &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH            &kp LCTRL
                                 &kp LCTRL  &kp RALT   &mo 1  &kp LGUI    &kp SPACE  &kp RET   &mo 2  &kp BACKSPACE
             >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUM_LAYER {
@@ -121,6 +123,8 @@
     &trans  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG        &trans    &kp DELETE  &bt BT_CLR    &bt BT_NXT  &kp SLASH  &kp N1  &kp N2  &kp N3   &kp DOT  &kp MINUS
                                                             &trans        &trans        &trans  &trans        &trans         &trans  &kp N0  &trans
             >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NAV_LAYER {
@@ -132,6 +136,8 @@
        &trans         &trans         &trans         &M_IJPREV         &M_IJNEXT  &trans  &trans    &trans          &trans         &trans        &trans           &trans  &trans  &trans
                                                        &trans            &trans  &trans  &trans    &trans          &trans         &trans        &trans
             >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         ADJUST_LAYER {
@@ -143,6 +149,8 @@
 &trans  &kp F11  &kp F12  &trans  &trans   &trans  &trans    &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                           &trans  &trans   &trans  &trans    &trans      &trans        &trans        &trans
             >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
